@@ -7,8 +7,14 @@ import {BsFacebook,BsYoutube,BsInstagram,BsTwitter} from "react-icons/bs"
 import "./NavbarStyles.css"
 
 function Navbar(){
+
+    const [nav, setNav]=React.useState(false)
+    console.log(nav)
+    const handleNav=()=>{
+        setNav(!nav)
+    }
     return(
-        <div className="navbar">
+        <div className={nav?"navbar navbar-bg":"navbar"}>
             <div className="logo">
                 <h2>BEACHES.</h2>
             </div>
@@ -20,14 +26,16 @@ function Navbar(){
                 <li>Views</li>
             </ul>
             <div className="nav-icons">
-                <BiSearch className="icon" />
-                <BsPerson className="icon" />
+                <BiSearch className="icon" size={22} />
+                <BsPerson className="icon" size={22} style={{marginLeft:"1em"}}/>
             </div>
-            <div className="hamburger">
-                <FiMenu className="hamburger" />  
+            <div className="hamburger" onClick={handleNav} >
+                <FiMenu className="hamburger" size={22}/>  
             </div>
+
+            {/* Mobile menu */}
             
-            <div className="dropdown-menu">
+            <div className={nav?"dropdown-menu active":"dropdown-menu"}>
                 <ul className="dropdown-nav">
                     <li>Home</li>
                     <li>Destinations</li>
