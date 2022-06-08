@@ -8,6 +8,8 @@
     padding: 0 1em;
     /* border: 2px solid red; */
     margin-bottom: 0;
+     z-index: 2; /* overlap  */
+    position: absolute;
 }
 
 .navbar-bg{

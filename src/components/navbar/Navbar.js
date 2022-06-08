@@ -9,10 +9,12 @@ import "./NavbarStyles.css"
 function Navbar(){
 
     const [nav, setNav]=React.useState(false)
-    console.log(nav)
+
     const handleNav=()=>{
-        setNav(!nav)
+        setNav(prevNav=> !prevNav)
     }
+
+
     return(
         <div className={nav?"navbar navbar-bg":"navbar"}>
             <div className="logo">
