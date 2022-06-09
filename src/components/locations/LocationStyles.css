@@ -1,0 +1,41 @@
+
+
+.locations{
+    text-align: center;
+    padding:3em 0;
+    width: 100%;
+}
+.locations h1{
+    padding: 1em 0 0.325em;
+    text-transform: uppercase;
+}
+.locations p{
+    padding-bottom: 1.5em;
+    font-size: 1.25rem;
+}
+
+.locations .img-container{
+    --gap:1rem;
+    --num-cols:5;
+    --row-height:300px;
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    margin: auto;
+    gap:var(--gap)
+    
+}
+
+.locations img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-col-span-2{
+    grid-column: span 3;
+}
+
+.grid-row-span-2{
+    grid-row: span 2;
+}

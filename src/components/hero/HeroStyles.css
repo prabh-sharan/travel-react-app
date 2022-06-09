@@ -46,6 +46,7 @@
     display: flex;
     margin-top: 1em;
     background-color: #ffffffcc;
+    opacity: 0.8;
 
 }
 .form-search input{
@@ -63,6 +64,7 @@
     border-radius:0;
     
 }
+
 
 @media screen and (max-width:940px) {
     .form-search{
