@@ -8,8 +8,10 @@
     padding: 0 1em;
     /* border: 2px solid red; */
     margin-bottom: 0;
-     z-index: 2; /* overlap  */
+    z-index: 2; /* overlap  */
     position: absolute;
+    color:#fff;
+    
 }
 
 .navbar-bg{
@@ -23,9 +25,18 @@ li{
 
 }
 
+.logo{
+    padding-right: 1.5em;
+   
+}
+
 .hamburger{
     /* padding: 1rem; */
     display: none;
+}
+
+.icon{
+    cursor: pointer;
 }
 
 .dropdown-menu{
@@ -38,6 +49,10 @@ li{
     }
     .nav-icons{
         display: none;
+    }
+    
+    .dark{
+        color:#000;
     }
     .hamburger{
         display: block;
@@ -55,6 +70,7 @@ li{
         background-color: whitesmoke;
         transition: 450ms ease;
         margin-top: 0;
+        color:#000;
     }
 
     .active{
@@ -79,6 +95,7 @@ li{
     .menu-icons button{
         margin:1em;
         width: 90%;
+        cursor: pointer;
     }
     .social-icons{
         display: flex;

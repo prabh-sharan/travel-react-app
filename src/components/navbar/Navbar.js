@@ -3,6 +3,7 @@ import {FiMenu} from "react-icons/fi"
 import {BsPerson} from "react-icons/bs"
 import {BiSearch} from "react-icons/bi"
 import {BsFacebook,BsYoutube,BsInstagram,BsTwitter} from "react-icons/bs"
+import {IoMdClose} from "react-icons/io"
 
 import "./NavbarStyles.css"
 
@@ -17,7 +18,7 @@ function Navbar(){
 
     return(
         <div className={nav?"navbar navbar-bg":"navbar"}>
-            <div className="logo">
+            <div className={nav?"logo dark":"logo"}>
                 <h2>BEACHES.</h2>
             </div>
             <ul className="nav-menu">
@@ -29,10 +30,12 @@ function Navbar(){
             </ul>
             <div className="nav-icons">
                 <BiSearch className="icon" size={22} />
-                <BsPerson className="icon" size={22} style={{marginLeft:"1em"}}/>
+                <BsPerson className="icon" size={22} style={{marginLeft:"1em"}} />
             </div>
             <div className="hamburger" onClick={handleNav} >
-                <FiMenu className="hamburger" size={22}/>  
+                {nav?(<IoMdClose className="icon dark" size={22} />):
+                (<FiMenu className="icon" size={22} /> )  }
+                
             </div>
 
             {/* Mobile menu */}
