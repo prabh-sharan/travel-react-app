@@ -16,13 +16,10 @@ function Hero() {
              <h2>Find the right experience for your vacation.</h2>
              
              <form className="form">
-               <div className="form-search">
+               <div className='form-search'>
                  <input type="text" placeholder="Search Destinations" />
-                 <button><AiOutlineSearch className="icon" size={18} /></button> 
+                 <button><AiOutlineSearch className="icon" size={18} /></button>
                </div>
-               {/* <div>
-                 <button><AiOutlineSearch className="icon" /></button>
-               </div> */}
              </form>
         </div>
     </div>
