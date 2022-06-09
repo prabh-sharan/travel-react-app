@@ -39,3 +39,14 @@
 .grid-row-span-2{
     grid-row: span 2;
 }
+
+@media screen and (max-width:940px) {
+    .locations .img-container{
+        --gap:0.5rem;
+        --num-cols:2;
+        --row-height:200px; 
+    }
+    .grid-col-span-2{
+        grid-column: span 2;
+    }
+}
