@@ -35,7 +35,7 @@
 
 .right{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
 }
 
@@ -46,3 +46,8 @@
     text-align: center;
 }
 
+.promo .save{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color:var(--primary)
+}
