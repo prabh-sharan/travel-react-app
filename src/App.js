@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./components/card/Card";
 import Hero from "./components/hero/Hero";
 import Locations from "./components/locations/Locations";
 import Navbar from "./components/navbar/Navbar";
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Locations />
       <Search />
+      <Card />
     </div>
   );
 }

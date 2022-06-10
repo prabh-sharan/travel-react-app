@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchStyles from "./SearchStyles.css"
+import "./SearchStyles.css"
 import Gold from "../../assets/gold.png"
 
 function search() {

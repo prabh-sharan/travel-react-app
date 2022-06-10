@@ -1,5 +1,5 @@
 import React from 'react'
-import LocationStyles from "./LocationStyles.css"
+import "./LocationStyles.css"
 import Borabora from "../../assets/borabora.jpg"
 import Borabora2 from "../../assets/borabora2.jpg"
 import Maldives from "../../assets/maldives.jpg"
