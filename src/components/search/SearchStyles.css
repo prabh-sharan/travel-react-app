@@ -13,6 +13,7 @@
 
 .search h3,p{
     text-transform: uppercase;
+   
 }
 
 .left-more-info{
@@ -47,7 +48,74 @@
 }
 
 .promo .save{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
-    color:var(--primary)
+    color:var(--primary-dark)
+}
+.promo .timer{
+    font-size:1.2rem;
+    padding: 1em 0;
+
+}
+.promo .offers{
+    /* font-size:1.2rem ; */
+    background-color: #333;
+    color:whitesmoke;
+    padding:0.4em 0;
+}
+
+.search form{
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-select{
+    margin:0.4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.search input,select{
+    font-size: 1rem;
+    outline:none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search .date{
+    display: flex;
+}
+
+.search button{
+    margin: 0.4em;
+}
+
+@media screen and (max-width:940px) {
+    .search .container{
+        grid-template-columns: 1fr;
+    }
+    .left-more-info{
+        grid-template-columns: 1fr;
+    }
+    .search .right{
+        max-width: 100%;
+    }
+    .search form{
+        width:100%;
+    }
+
+    .search .date{
+        flex-direction: column;
+    }
+
+    .box{
+        text-align: center;
+        margin-top: 1em;
+        
+    }
+
+    .box-border{
+       border:1px solid #333;
+       padding: 0.4em;
+    }
+    
 }

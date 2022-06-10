@@ -11,7 +11,7 @@ function search() {
                 <p>Aenean at laoreet massa. Morbi commodo dui vestibulum ligula pretium egestas vitae at ipsum. Praesent posuere dolor eget ex gravida consectetur. Praesent laoreet semper congue. Quisque pulvinar, purus eu vestibulum facilisis, metus dui semper mi, id rhoncus purus turpis sed nulla. Fusce id leo fringilla, commodo erat a, scelerisque tellus. Aliquam hendrerit vestibulum vulputate. Vivamus pellentesque ante id interdum dictum. Nulla eget leo ullamcorper, rhoncus tortor eu, iaculis tellus. Maecenas eleifend massa vel magna venenatis posuere. Nulla dapibus aliquet arcu eu pretium. Morbi varius risus eu justo vehicula eleifend. Suspendisse at pharetra neque. Nulla facilisi.</p>
 
                 <div className="left-more-info">
-                    <div className="box">
+                    <div className="box box-border">
                         <div>
                             <img src={Gold} alt="/" style={{marginRight:"1em"}} />
                         </div>
@@ -22,7 +22,7 @@ function search() {
                         </div>
                     </div>
 
-                    <div className="box">
+                    <div className="box ">
                         <div>
                             <h3>Luxurious Stays</h3>
                             <p>Check out our new offers</p>
@@ -42,7 +42,7 @@ function search() {
                 </div>
 
                 <form>
-                    <div className="input-wrap">
+                    <div className="custom-select">
                         <label>Destinations</label>
                         <select>
                             <option value="1">Maldives</option>
@@ -55,17 +55,17 @@ function search() {
 
                     <div className="date">
 
-                        <div className="input-wrap">
+                        <div className="custom-select">
                             <label>Check-In</label>
                             <input type="date" />
                         </div>
 
-                        <div className="input-wrap">
+                        <div className="custom-select">
                             <label>Check-Out</label>
                             <input type="date" />
                         </div>
-                        <button>Check Availability</button>
                     </div>
+                        <button>Check Availability</button>
                 </form>
             </div>
         </div>
