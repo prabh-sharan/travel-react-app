@@ -1,0 +1,26 @@
+
+.carousel{
+    padding: 2em 0;
+
+}
+
+.carousel img{
+    height: 90vh;
+    object-fit: contain;
+    width: 100%;
+  
+}
+
+.carousel .control-dots li{
+    padding: 0.2em;
+    border:  solid grey;
+
+} 
+
+.carousel .control-dots .dots{
+    position: fixed;
+    top:35em;
+    margin: 0;
+    
+    background-color: red;
+}

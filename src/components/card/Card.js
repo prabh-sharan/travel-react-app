@@ -1,18 +1,15 @@
 import React from 'react'
 import "./CardStyles.css"
 
-import Borabora from "../../assets/borabora.jpg"
-import Borabora2 from "../../assets/borabora2.jpg"
-import Maldives from "../../assets/maldives.jpg"
-import Maldives2 from "../../assets/maldives2.jpg"
-import Maldives3 from "../../assets/maldives3.jpg"
-import Keywest from "../../assets/keywest.jpg"
 
-function Card() {
+
+function Card(props) {
   return (
     <div className="card">
-
-
+      <img src={props.bgImg} alt="destination" />
+      <div className="card-overlay">
+          <p>{props.text}</p>
+      </div>
     </div>
   )
 }

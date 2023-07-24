@@ -22,11 +22,13 @@
 }
 li{
     padding: 1em;
+    cursor: pointer;
 
 }
 
 .logo{
     padding-right: 1.5em;
+    cursor: pointer;
    
 }
 
