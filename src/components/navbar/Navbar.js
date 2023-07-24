@@ -4,7 +4,6 @@ import {BsPerson} from "react-icons/bs"
 import {BiSearch} from "react-icons/bi"
 import {BsFacebook,BsYoutube,BsInstagram,BsTwitter} from "react-icons/bs"
 import {IoMdClose} from "react-icons/io"
-
 import "./NavbarStyles.css"
 
 function Navbar(){
